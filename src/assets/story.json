@@ -1,0 +1,157 @@
+{
+	"success": true,
+	"story": {
+		"characterName": "Zapatin",
+		"id": "el_zapato_perdido",
+		"scenes": [
+			{
+				"content": "¡Hola! Soy Zapatin, un zapato muy curioso. Vivo en el cuarto de Mateo, un niño de 6 años. Un día, ¡desapareció mi par! Estoy solo y quiero encontrarlo. ¿Me ayudas?",
+				"id": "inicio",
+				"imagePrompt": "Dibujo tierno de un zapato animado llamado Zapatin, con ojos grandes y sonrisa, en un cuarto de niño desordenado.",
+				"type": "start",
+				"options": [
+					{
+						"nextSceneId": "debajo_cama",
+						"text": "Buscar debajo de la cama."
+					},
+					{
+						"nextSceneId": "armario",
+						"text": "Revisar dentro del armario."
+					}
+				]
+			},
+			{
+				"content": "Debajo de la cama solo hay polvo y un calcetín solitario. ¡Pero mira! El calcetín habla. Dice que vio a un zapato muy parecido a ti irse por la puerta.",
+				"id": "debajo_cama",
+				"imagePrompt": "Dibujo de un zapato animado buscando debajo de una cama. Un calcetín con cara amigable le está hablando.",
+				"type": "intermediate",
+				"options": [
+					{
+						"nextSceneId": "pasillo",
+						"text": "Seguir al zapato por el pasillo."
+					},
+					{
+						"nextSceneId": "quedarse_calcetin",
+						"text": "Quedarse a charlar con el calcetín."
+					}
+				]
+			},
+			{
+				"content": "El armario está lleno de ropa y juguetes. De repente, una linterna mágica empieza a brillar. ¡Dice que tu par está en un lugar donde hay mucha música!",
+				"id": "armario",
+				"imagePrompt": "Dibujo de un zapato animado dentro de un armario lleno de ropa y juguetes. Una linterna mágica brilla intensamente.",
+				"type": "intermediate",
+				"options": [
+					{
+						"nextSceneId": "salon_musica",
+						"text": "Ir al salón donde Mateo toca música."
+					},
+					{
+						"nextSceneId": "ignorar_linterna",
+						"text": "Ignorar la linterna y seguir buscando en el armario."
+					}
+				]
+			},
+			{
+				"content": "Corres por el pasillo y llegas a la cocina. ¡Oh, sorpresa! Tu par no está, pero ves un grupo de utensilios de cocina bailando al ritmo de una canción. Te invitan a unirte.",
+				"id": "pasillo",
+				"imagePrompt": "Dibujo de utensilios de cocina bailando alegremente en una cocina. Zapatin observa con curiosidad.",
+				"type": "twist",
+				"options": [
+					{
+						"nextSceneId": "bailar_utensilios",
+						"text": "Unirte al baile."
+					},
+					{
+						"nextSceneId": "seguir_buscando",
+						"text": "Decidir seguir buscando a tu par."
+					}
+				]
+			},
+			{
+				"content": "Te quedas charlando con el calcetín. Te cuenta historias divertidas de los pies de Mateo. Te das cuenta de que no necesitas a tu par para pasar un buen rato. ¡Puedes hacer amigos nuevos!",
+				"id": "quedarse_calcetin",
+				"imagePrompt": "Dibujo tierno de Zapatin y el calcetín sonriendo y charlando animadamente.",
+				"type": "final",
+				"options": []
+			},
+			{
+				"content": "Llegas al salón. Mateo está tocando la guitarra. Ves a tu par… ¡en el pie de un oso de peluche! Parece que el oso quería un zapato nuevo. ¿Deberías quitárselo?",
+				"id": "salon_musica",
+				"imagePrompt": "Dibujo de un oso de peluche tocando la guitarra con un zapato puesto. Mateo observa sonriendo.",
+				"type": "twist",
+				"options": [
+					{
+						"nextSceneId": "quitar_zapato_oso",
+						"text": "Quitarle el zapato al oso."
+					},
+					{
+						"nextSceneId": "dejar_oso",
+						"text": "Dejar que el oso se quede con el zapato."
+					}
+				]
+			},
+			{
+				"content": "Decides seguir buscando en el armario. Encuentras un mapa que te lleva a... ¡la nevera! Dentro, los alimentos están organizando una fiesta. ¡Qué divertido!",
+				"id": "ignorar_linterna",
+				"imagePrompt": "Dibujo de alimentos dentro de una nevera decorada para una fiesta. Zapatin mira sorprendido.",
+				"type": "twist",
+				"options": [
+					{
+						"nextSceneId": "unirse_fiesta",
+						"text": "Unirte a la fiesta en la nevera."
+					},
+					{
+						"nextSceneId": "salir_nevera",
+						"text": "Salir de la nevera y seguir buscando."
+					}
+				]
+			},
+			{
+				"content": "¡Qué divertido! Bailas con los utensilios de cocina hasta que te cansas. Te das cuenta de que puedes ser feliz aunque no encuentres a tu par. ¡Lo importante es disfrutar el momento!",
+				"id": "bailar_utensilios",
+				"imagePrompt": "Dibujo de Zapatin y los utensilios de cocina bailando y riendo alegremente.",
+				"type": "final",
+				"options": []
+			},
+			{
+				"content": "Sigues buscando, pero empiezas a sentirte triste. Entonces, recuerdas que Mateo te quiere mucho, ¡tengas o no un par! Decides volver a su cuarto y esperar a que te necesite.",
+				"id": "seguir_buscando",
+				"imagePrompt": "Dibujo de Zapatin caminando pensativo. El ambiente es tranquilo y sereno.",
+				"type": "final",
+				"options": []
+			},
+			{
+				"content": "Le quitas el zapato al oso, pero el oso empieza a llorar. Te sientes mal y decides devolvérselo. Aprendes que es mejor compartir y hacer felices a los demás, ¡incluso si eso significa no tener tu par!",
+				"id": "quitar_zapato_oso",
+				"imagePrompt": "Dibujo de un oso de peluche llorando porque le quitaron su zapato. Zapatin se ve arrepentido.",
+				"type": "final",
+				"options": []
+			},
+			{
+				"content": "Dejas que el oso se quede con el zapato. El oso te da un abrazo. Te das cuenta de que no necesitas a tu par para ser feliz. ¡Hacer feliz a otros te hace aún más feliz!",
+				"id": "dejar_oso",
+				"imagePrompt": "Dibujo de un oso de peluche abrazando a Zapatin. Ambos se ven contentos.",
+				"type": "final",
+				"options": []
+			},
+			{
+				"content": "¡La fiesta en la nevera es genial! Bailas y comes helado con los alimentos. Te das cuenta de que estar solo puede ser divertido, ¡especialmente si hay fiesta!",
+				"id": "unirse_fiesta",
+				"imagePrompt": "Dibujo de Zapatin bailando y comiendo helado con alimentos animados en una nevera festiva.",
+				"type": "final",
+				"options": []
+			},
+			{
+				"content": "Sales de la nevera. Te sientes cansado de buscar. Te das cuenta que estar solo no es tan malo y decides volver con Mateo y disfrutar de su compañía.",
+				"id": "salir_nevera",
+				"imagePrompt": "Dibujo de Zapatin saliendo de una nevera y sonriendo.",
+				"type": "final",
+				"options": []
+			}
+		],
+		"setting": "Cuarto de un niño de 6 años",
+		"theme": "Fantasía",
+		"title": "Interactivo"
+	}
+}

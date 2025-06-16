@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router";
 import EmblaBookReader from "./EmblaBookReader";
 import aiService from "../services/ai.service";
+import InteractiveBook from "./InteractiveBook";
 
 function fromBase64UrlSafe(str: string): any {
   const base64 = str.replace(/-/g, "+").replace(/_/g, "/");
@@ -54,8 +55,8 @@ const BookReaderContainer = () => {
 
       aiService
         .generateStory(adaptedParams)
-        .then((result) => setStoryData(result))
-        .catch((err) => {
+        .then((result:any) => setStoryData(result))
+        .catch((err: any) => {
           console.error("Error generando historia:", err);
           setError("No se pudo generar la historia.");
         });
@@ -90,7 +91,7 @@ const BookReaderContainer = () => {
             {storyData.story?.title || "Título de la historia"}
           </h1>
         </div>
-        <EmblaBookReader storyData={storyData} />
+        <InteractiveBook storyData={storyData} />
       </div>
     </div>
   );

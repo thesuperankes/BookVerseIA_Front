@@ -51,7 +51,7 @@ const InteractiveBook = ({ storyData }) => {
 
   const orderedScenes = useMemo(() => {
     const result = [];
-    storyData.story.scenes.forEach((scene, idx) => {
+    storyData.story.scenes.forEach((scene:any, idx:any) => {
       sceneIndexMap.current[scene.id] = idx + 1; // offset by 1 due to cover
       result.push(scene);
     });
